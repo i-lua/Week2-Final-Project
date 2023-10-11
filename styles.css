@@ -450,7 +450,7 @@ VALUES
 
 .main__values {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 } 
 
 .main__values--description {
@@ -929,6 +929,7 @@ footer {
 
 .links {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -1027,6 +1028,13 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .footer__info {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 50px;
     }
 
     .description__quality, .faqs__title {
@@ -1036,7 +1044,54 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
     .description__main--quality {
         max-width: fit-content;
     }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    .email__form, .features__title, .description__steps {
+        align-items: center;
 }
+
+    .numbers__description, .description__steps {
+        padding: 0;
+    }
+
+    .steps__description {
+        padding-right: 50px;
+    }
+
+    .main__values--description {
+        align-items: center;
+        padding: 0;
+    }
+
+    .ap__container {
+        flex-wrap: wrap;
+    }
+
+    .values__title, .values__description, .title__container, .affordable__description, .professionalism__description, .pricing__main {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .affordable {
+        margin-right: 0;
+    }
+
+    .plan__1, .plan__2, .plan__3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .testimonials__main, .charlotte__container {
+        padding-left: 0;
+    }
+
+    .testimonial__person, .testimonial__person--container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 @media (max-width: 768px) {
     .description__main--quality {
@@ -1046,5 +1101,9 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
     .contact__links {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .links {
+        flex-wrap: wrap;
     }
 }
