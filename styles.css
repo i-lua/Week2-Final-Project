@@ -882,6 +882,7 @@ CONTACT US
 
 .contact {
     display: flex;
+    justify-content: center;
     padding: 0 100px;
 }
 
@@ -893,13 +894,13 @@ CONTACT US
 }
 
 .btn__divider {
-    padding: 20px;
+    padding: 0 15px;
 }
 
 .contact__links {
     display: flex;
     width: calc(100%/2);
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .btn__contact {
@@ -929,16 +930,16 @@ footer {
 
 .links {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .link {
     display: flex;
     flex-direction: column;
     width: calc(100%/5);
-    align-items: center;
     margin-top: 48px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
 }
 
 .link__title {
@@ -967,6 +968,8 @@ footer {
     align-items: center;
     color: white;
     padding: 68px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer__logo {
@@ -1008,6 +1011,22 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
 
 */
 
+@media (max-width:1130px) {
+    .contact {
+        padding: 0;
+    }
+
+    .description__contact {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media (max-width:1024px) {
 
     .btn__menu {
@@ -1024,17 +1043,32 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
         display: none;
     }
 
-    nav, .services, .quality__container, .steps__container, .plans, .main__values, .testimonials__container, .contact {
+    nav, .quality__container, .steps__container, .plans, .main__values, .testimonials__container, .contact {
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: space-evenly;
     }
 
+    .services {
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0;
+    }
+    .service {
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+
     .footer__info {
         flex-wrap: wrap;
         justify-content: space-evenly;
+        text-align: center;
         line-height: 50px;
+    }
+
+    .link {
+    text-align: center;
     }
 
     .description__quality, .faqs__title {
@@ -1043,10 +1077,6 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
 
     .description__main--quality {
         max-width: fit-content;
-    }
-
-    .links {
-        flex-wrap: wrap;
     }
 
     .email__form, .features__title, .description__steps {
@@ -1093,6 +1123,26 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
         justify-content: center;
     }
 
+    .contact__links {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:990px) {
+    .btn__email {
+        position: inherit;
+        width: 100%;
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .email__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     .description__main--quality {
         text-align: center;
@@ -1102,8 +1152,5 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
         display: flex;
         justify-content: space-evenly;
     }
-
-    .links {
-        flex-wrap: wrap;
-    }
 }
+
