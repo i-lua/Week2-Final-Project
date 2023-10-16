@@ -1012,6 +1012,9 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
 */
 
 @media (max-width:1130px) {
+    .row {
+        padding: 0 24px;
+    }
     .contact {
         padding: 0;
     }
@@ -1144,6 +1147,44 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
 }
 
 @media (max-width: 768px) {
+    .email__form {
+        width: 70%;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        padding-top: 24px;
+    }
+
+    .service__description {
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 24px;
+    }
+
+    #steps {
+        padding-bottom: 0;
+    }
+
+    .main__values--description {
+       padding-bottom: 32px;
+       width: 70%;
+    }
+    
+    #pricing {
+        padding-bottom: 0;
+    }
+
+    .plan {
+        width: 60%;
+    }
+
+    .testimonials__main {
+        width: 70%;
+    }
     .description__main--quality {
         text-align: center;
     }
@@ -1151,6 +1192,20 @@ SMALL PHONES, TABLESTS, LARGE SMARTPHONES
     .contact__links {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    #contact__us {
+        margin: 60px;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-right: 0;
+        padding-left: 0;
+        padding: 50px;
+    }
+
+    .footer__info {
+        margin: 0;
+        padding: 32px;
     }
 }
 
